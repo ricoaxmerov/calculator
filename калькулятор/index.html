@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <section>
+            <div class="wrapper">
+                <label for="bill" class="lbl">
+                    Счет
+                </label>
+                <div class="input-box">
+                    <span>₼</span>
+                    <input type="number" value="0.00" id="bill" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="lbl">Чаевые</span>
+                <span id="tip-amount" class="val">
+                    ₼ 0
+                </span>
+            </div>
+            <hr>
+            <div class="wrapper">
+                <span class="lbl">Итоговый счет</span>
+                <span id="total-amount" class="val">
+                    ₼ 0
+                </span>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <label for="tip" class="lbl">
+                    Чевые %
+                </label>
+                <span id="tip-percent" class="val">
+                    0
+                </span>
+            </div>
+            <input type="range" min="1" id="tip" value="15">
+            <div class="wrapper">
+                <label for="no-of-people" class="lbl">
+                    Количесво людей
+                </label>
+                <span id="split-num" class="val">
+                    0
+                </span>
+            </div>
+            <input type="range" min="1" max="15" id="no-of-people" value="1">
+        </section>
+        
+        <section>
+            <div class="wrapper">
+                <span class="lbl">
+                    Чаевые с человека
+                </span>
+                <span id="tip-per-person" class="val">
+                    ₼ 0
+                </span>
+            </div>
+        </section>
+    </div>
+    <div class="diviv">
+        <button type="button" class="btn btn-success">
+            <a class="aclas" href="index2.html">Другой калькулятор</a></button>
+    </div>
+    
+<br><br><br><br><br><br><br>
+
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
